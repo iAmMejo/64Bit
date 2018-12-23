@@ -1,6 +1,6 @@
 var vpWidth = $(window).innerWidth();
 var vpHeight = $(window).innerHeight();
-var vid = $(".vid-bg").innerHeight();
+var vid = $(".landing").innerHeight();
 
 $(document).ready(function () {
     // Add smooth scrolling to all links in navbar + footer link

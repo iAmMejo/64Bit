@@ -3,12 +3,14 @@ body {
     line-height: 1.8;
     color: #818181;
     overflow-x: hidden;
-overflow-y: scroll;
+    overflow-y: scroll;
 }
 
+#bootstrap-override {
+    background-color: none;
+}
 
-
-.vid-bg {
+.landing {
     background: black;
     position: relative;
     width: 100%;
@@ -17,9 +19,11 @@ overflow-y: scroll;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    opacity: 1;
-  }
+}
 
+.theme_1 {
+    background-color: #c9c9c9;
+}
 
 h2 {
     font-size: 24px;
@@ -37,10 +41,7 @@ h4 {
     margin-bottom: 30px;
 }
 
-.hello {
-    background-color: #c9c9c9;
-    color: white;
-}
+
 
 
 .container-fluid {
@@ -59,7 +60,7 @@ h4 {
     width: 8rem;
     height: 8rem;
     margin: 30px 20px;
-    
+
 }
 
 .logo-small {
@@ -73,15 +74,16 @@ h4 {
 }
 
 .thumbnail {
-    padding: 0 0 15px 0;
+    background-color: none !important;
+    padding: 0px 0px;
+    margin: 0;
     border: none;
     border-radius: 0;
 }
 
 .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
+    width: 625px;
+    height: 250px;
 }
 
 .carousel-control.right,
