@@ -1,6 +1,7 @@
 var vpWidth = $(window).innerWidth();
 var vpHeight = $(window).innerHeight();
-var vid = $(".landing").innerHeight();
+var landing = $(".landing").innerHeight();
+var icons = $(".icons");
 
 $(document).ready(function () {
     // Add smooth scrolling to all links in navbar + footer link
@@ -41,10 +42,10 @@ $(document).ready(function () {
 
 $(window).on("scroll", function () {
     var scrollPos = $(window).scrollTop();
-    if (scrollPos < vid) {
+    if (scrollPos < landing) {
         $(".navbar").css("background-color", "transparent");
         $(".navbar").fadeIn();
-    } else if (scrollPos > vid) {
+    } else if (scrollPos > landing) {
         $(".navbar").css("background-color", "#040404");
         $(".navbar").fadeIn();
 

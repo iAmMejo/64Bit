@@ -1,7 +1,7 @@
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
-    color: #818181;
+    color: black;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -22,9 +22,27 @@ body {
 }
 
 .theme_1 {
-    background-color: #c9c9c9;
+    background-image: linear-gradient(to bottom, rgba(143, 155, 167, 0.5) , rgba(16, 96, 172, 0.75));
 }
 
+.landing-card {
+    display: relative;
+    background-color: #f4511e;
+    color: white;
+    z-index: 9;
+}
+
+.scroll-down{
+    margin-top: 23% !important;
+}
+.service-icons {
+    width: 75px;
+    height: 75px;
+}
+
+.spacing {
+    margin-bottom: 75px;
+}
 h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -41,7 +59,13 @@ h4 {
     margin-bottom: 30px;
 }
 
+.form-control {
+    border: solid black 1px;
+}
 
+.form-control::placeholder {
+    color: black;
+}
 
 
 .container-fluid {
@@ -186,6 +210,7 @@ h4 {
     color: #fff !important;
 }
 
+
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
@@ -245,3 +270,58 @@ footer .glyphicon {
         font-size: 150px;
     }
 }
+
+
+
+#main {
+    transition: opacity 1s ease, transform 1s ease;
+    padding: 4.5em 3em 3em 3em ;
+    background: #ffffff;
+    border-radius: 4px;
+    cursor: crosshair;
+    max-width: 100%;
+    opacity: 0.9;
+    position: relative;
+    text-align: center;
+    width: 27em;
+    
+}
+
+    #main .avatar {
+        position: relative;
+        display: block;
+        margin-bottom: 1.5em;
+    }
+
+        #main .avatar img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 100%;
+            box-shadow: 0 0 0 1.5em #ffffff;
+        }
+
+        #main .avatar:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -3em;
+            width: calc(100% + 6em);
+            height: 1px;
+            z-index: -1;
+            background: #c8cccf;
+        }
+
+    @media screen and (max-width: 480px) {
+
+        #main {
+            padding: 4em 2em 2.5em 2em ;
+            width: 100%;
+        }
+
+            #main .avatar:before {
+                left: -2em;
+                width: calc(100% + 4em);
+            }
+
+    }

@@ -4,6 +4,7 @@
 <head>
     <!-- Theme Made By www.w3schools.com -->
     <title> 64 Bit Software Solutions </title>
+    <link rel="icon" href="img\logops.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#myPage">64 Bit</a>
+                <a class="navbar-brand" href="#myPage" >64 Bit </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -42,8 +43,8 @@
 
     <!-- Landing Page -->
     <section class="landing">
-        <div id="particles-js"></div> 
-        
+        <div id="particles-js"></div>
+    </div>
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
         <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     </section>
@@ -81,44 +82,44 @@
         <h2>SERVICES</h2>
         <h4>What we offer</h4>
         <div class="row">
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-file logo-small"></span>
+            <div class="col-sm-3 slideanim spacing">
+                <span> <img class="service-icons" src="img\icons-services\compose.png"> </span>
                 <h4>WEB DESIGN</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-object-align-horizontal logo-small"></span>
+            <div class="col-sm-3 slideanim spacing">
+                <span><img class="service-icons" src="img\icons-services\layers.png"></span>
                 <h4>UI/UX DESIGN</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-phone logo-small"></span>
+            <div class="col-sm-3 slideanim spacing">
+                <span><img class="service-icons" src="img\icons-services\smartphone.png"></span>
                 <h4>WEB APPLICATIONS</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-hdd logo-small"></span>
+            <div class="col-sm-3 slideanim spacing">
+                <span><img class="service-icons" src="img\icons-services\database.png"></span>
                 <h4>DATABASE</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
 
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-cog logo-small"></span>
-                <h4>WEB DEVELOPMENT</h4>
+            <div class="col-sm-3 slideanim spacing">
+                <span><img class="service-icons" src="img\icons-services\map.png"></span>
+                <h4>ROAD MAP</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-blackboard logo-small"></span>
+            <div class="col-sm-3 slideanim spacing">
+                <span><img class="service-icons" src="img\icons-services\notepad.png"></span>
                 <h4>ANALYTICS</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-duplicate logo-small"></span>
+            <div class="col-sm-3 slideanim spacing">
+                <span><img class="service-icons" src="img\icons-services\windows.png"></span>
                 <h4>LANDING PAGES</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
-            <div class="col-sm-3 slideanim">
-                <span class="glyphicon glyphicon-shopping-cart logo-small"></span>
+            <div class="col-sm-3 slideanim spacing">
+                <span><img class="service-icons" src="img\icons-services\price-tag.png"></span>
                 <h4>E-COMMERCE</h4>
                 <!-- <p>Lorem ipsum dolor sit amet..</p> -->
             </div>
@@ -126,32 +127,7 @@
     </div>
 
 
-    <!-- Portfolio -->
-    <!-- <div id="portfolio" class="container-fluid text-center theme_1">
-        <h2>Portfolio</h2>
-        <h4>Our recent work</h4>
-        <div class="row text-center slideanim">
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="img\portfolio\ex1.jpg" height="400px" width="300px">
-                    <button class="portfolio-btn">Details</button>
-                </div>
-                <h2><strong>Intel</strong></h2>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="img\portfolio\ex2.jpg">
-                </div>
-                <h2><strong>Google</strong></h2>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="img\portfolio\ex3.jpg">
-                </div>
-                <h2><strong>AMD</strong></h2>
-            </div>
-        </div>
-    </div> -->
+
 
 
     <!-- Contact -->
@@ -160,11 +136,14 @@
         <div class="row">
             <div class="col-sm-7 slideanim">
                 <div class="row">
-                    <div class="col-sm-6 form-group">
+                    <div class="col-sm-4 form-group">
                         <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
                     </div>
-                    <div class="col-sm-6 form-group">
+                    <div class="col-sm-4 form-group">
                         <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                    <div class="col-sm-4 form-group">
+                        <input class="form-control" id="email" name="subject" placeholder="Subject..." type="options" required>
                     </div>
                 </div>
                 <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
@@ -174,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 slideanim">
+            <div class="col-sm-5 slideanim ">
                 <p> Or just shoot us an E-Mail. We'll get back to you within 24 hours.</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span> Saint Louis, MO</p>
                 <p><span class="glyphicon glyphicon-phone"></span> +1 (314) 555 - 5555</p>
