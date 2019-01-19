@@ -22,14 +22,19 @@ body {
 }
 
 .theme_1 {
-    background-image: linear-gradient(to bottom, rgba(143, 155, 167, 0.5) , rgba(16, 96, 172, 0.75));
+    background-color: #f6f6f6;
 }
 
-.landing-card {
+.filler {
     display: relative;
-    background-color: #f4511e;
     color: white;
     z-index: 9;
+}
+
+.filler h5 {
+    margin: 35px;
+    text-align: center;
+    letter-spacing: .4em;
 }
 
 .scroll-down{
